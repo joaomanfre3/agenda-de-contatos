@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* Tema claro rosé com acento rosa — identidade própria na coleção */
+  --color-ink: #2c1820;
+  --color-accent: #e11d48; /* rosa */
+  --color-paper: #fef6f8;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  min-height: 100dvh;
+  color: var(--color-ink);
+  background:
+    radial-gradient(80% 50% at 50% -10%, #ffe0e8 0%, transparent 65%),
+    var(--color-paper);
+  background-attachment: fixed;
+}
+
+::selection {
+  background: #fecdd6;
+  color: #2c1820;
+}
